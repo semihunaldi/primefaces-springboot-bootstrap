@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                template="/templates/generalTemplate.xhtml">
+    <ui:define name="mainContent">
+        <p:outputPanel>
+            <h:outputText value="Hello "/>
+            <h:outputText value="#{testController.greetingText}"/>
+            <h:form>
+                <p:commandButton value="Throw Exception" actionListener="#{testController.throwException}"
+                                 process="@this"/>
+            </h:form>
+        </p:outputPanel>
+    </ui:define>
+</ui:composition>

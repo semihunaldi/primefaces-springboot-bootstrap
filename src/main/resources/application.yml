@@ -1,0 +1,4 @@
+management:
+  server:
+    servlet:
+      context-path: /sysinfo
